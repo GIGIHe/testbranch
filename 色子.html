@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>色子</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	body{background-image: url("timg (2).jpg");}
+	.content{
+		width: 120px;
+		height: 120px;
+		margin:100px auto;
+		position: relative;
+		/*display: flex;*/
+		perspective: 4000px;
+		
+	}
+	.container{transform-style: preserve-3d;
+		transition: all 10s ease 0s;transform-origin: 60px 60px;
+	animation:run 10s linear infinite;}
+	@keyframes run{
+		form{transform: rotateX(0deg) rotateY(0deg);}
+		to{
+		transform: rotateX(360deg) rotateY(360deg);}
+	}
+	.container1,
+	.container2,
+	.container3,
+	.container4,
+	.container5,
+	.container6{
+		position: absolute;
+			top: 0;
+			left: 0;
+		    width: 120px;
+			height: 120px;
+			display: flex;
+			margin:0 auto;
+			border: 1px solid black;
+			margin-bottom: 20px;
+			backface-visibility: hidden;
+			
+	}
+	.container1:nth-of-type(1) {
+		transform: translateZ(60px);
+	}
+	.container2:nth-of-type(2) {
+		transform: rotateX(90deg) translateZ(60px);
+	}
+	.container3:nth-of-type(3) {
+		transform: rotateX(180deg) translateZ(60px);
+	}
+	.container4:nth-of-type(4) {
+		transform:rotateX(-90deg) translateZ(60px);
+	}
+	.container5:nth-of-type(5) {
+		transform: rotateY(90deg) translateZ(60px);
+	}
+	.container6:nth-of-type(6){
+		transform: rotateY(-90deg) translateZ(60px);
+	}
+	.container:hover{
+		transform: rotateX(360deg) rotateY(360deg);
+	}
+	.container1,
+	.container3{
+	   justify-content: space-around;
+			align-items: center;
+			background-color: rgba(51, 102, 58,.5);
+			}
+		.item{
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background-color: #f00;
+			box-shadow: 1px 1px 1px #fff;
+		}
+		.container2{
+			 justify-content: space-around;
+			align-items: center;
+			flex-direction: column;
+			background-color: rgba(51, 17, 33,.5);
+		}
+		.container3 .item1{
+        align-self: flex-start;
+
+		}
+		.container3 .item3{
+        align-self: flex-end;
+		}
+		.container4,
+		.container5,
+		.container6{
+			flex-direction: column;
+			justify-content: space-around;
+			background-color: #e47;
+		}
+
+		.cc{
+			display: flex;
+			justify-content: space-around;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="container">
+<div class="container1">
+	<div class="item"></div>
+</div>
+<div class="container2">
+	<div class="item"></div>
+	<div class="item"></div>
+</div>
+<div class="container3">
+	<div class="item item1"></div>
+	<div class="item item2"></div>
+	<div class="item item3"></div>
+</div>
+<div class="container4">
+	<div class="cc">
+	<div class="item"></div>
+	<div class="item"></div>
+	</div>
+	<div class="cc">
+	<div class="item"></div>
+	<div class="item"></div>
+	</div>
+</div>
+<div class="container5">
+<div class="cc">
+	<div class="item"></div>
+	<div class="item"></div>
+	</div>
+	<div class="cc">
+	<div class="item"></div>
+	</div>
+	<div class="cc">
+	<div class="item"></div>
+	<div class="item"></div>
+	</div>
+</div>
+ <div class="container6">
+	<div class="cc">
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+	</div>
+		<div class="cc">
+	<div class="item"></div>
+	<div class="item"></div>
+	<div class="item"></div>
+       </div> 
+</div>
+</div>
+</div>
+</body>
+</html>
