@@ -1,0 +1,121 @@
+/*reset css Start*/
+*{
+	margin: 0px;
+	padding:0px;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+body{
+	font-size: 14px;
+	background-color:#9acd32 
+}
+/*reset css End*/
+/*头部css开始*/
+.header{
+	background-color:#000; 
+	height: 70px;
+}
+.header .wrapper{
+	width: 700px;
+	margin: 0 auto;
+	height: 70px;
+	color: #9acd32 ;
+}
+
+h1{
+	float: left;
+	height: 70px;
+	line-height: 70px;
+}
+.header .wrapper ul{
+	float: right;
+	line-height: 70px;
+	height: 70px;
+
+}
+.header .wrapper ul li{
+	float: left;
+	padding:0 10px;
+}
+.header .wrapper a{
+	color: #fff;
+}
+.header .wrapper a:hover{
+	text-decoration: underline;
+	color: #9acd32 ;
+}
+/*头部css结束*/
+/*主体css开始*/
+.main{
+	/*clear: both;*/
+	background-color: #fff;
+	width: 750px;
+	margin: 20px auto;
+	padding: 10px;
+}
+h2{
+	height: 128px;
+	line-height: 128px;
+	padding: 10px;
+	background-color: #d2d0d1;
+	margin-bottom: 20px;
+}
+.main .left{
+    float: left;
+    width: 530px;
+}
+.main .left .blog{
+	padding: 10px;
+}
+.main .right{
+	float: right;
+	width: 200px;
+	height: 400px;
+	padding: 5px;
+}
+.main .left .blog p{
+	text-indent: 2em;
+	line-height: 22px;
+}
+h3{
+	margin: 10px 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #9acd32;
+}
+.main .right li a{
+color:#fe7823;
+}
+.main .right li a:hover{
+	font-size: 16px;
+	color:#9acd32 ; 
+}
+.main .right p{
+	float: right;
+}
+.main .right p a{
+	color: gold;
+}
+.main .right form{
+	margin-top:10px;
+}
+.main .right .txt{
+	width:100px; 
+}
+/*主体css结束*/
+
+/*底部css开始*/
+.footer{
+	clear:both;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	background-color: #4a4a4a;
+}
+/*底部css结束*/
